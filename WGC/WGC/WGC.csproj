@@ -130,7 +130,15 @@
     <Content Include="Images\4.jpg" />
     <Content Include="Images\5.jpg" />
     <Content Include="Images\6.jpg" />
+    <Content Include="Images\i1.jpg" />
+    <Content Include="Images\i2.jpg" />
+    <Content Include="Images\i3.jpg" />
+    <Content Include="Images\i4.jpg" />
+    <Content Include="Images\i5.jpg" />
+    <Content Include="Images\i6.jpg" />
+    <Content Include="Images\i7.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\Photo.jpg" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\bootstrap.js" />
