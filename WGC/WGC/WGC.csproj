@@ -137,6 +137,7 @@
     <Content Include="Images\i5.jpg" />
     <Content Include="Images\i6.jpg" />
     <Content Include="Images\i7.jpg" />
+    <Content Include="Images\i8.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Photo.jpg" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
