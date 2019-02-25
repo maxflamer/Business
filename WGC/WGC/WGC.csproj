@@ -130,6 +130,7 @@
     <Content Include="Images\4.jpg" />
     <Content Include="Images\5.jpg" />
     <Content Include="Images\6.jpg" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\i1.jpg" />
     <Content Include="Images\i2.jpg" />
     <Content Include="Images\i3.jpg" />
