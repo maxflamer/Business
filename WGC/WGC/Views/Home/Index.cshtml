@@ -1,4 +1,5 @@
 ﻿@model WGC.Models.FeedbackMessage
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
     .glyphicon-menu-hamburger {
   font-size: 15px;
@@ -8,8 +9,11 @@
     width:750px;
     margin-bottom:15px;
     }
+
+    .w3-section {
+    margin-bottom: 0px!important;
+    }
 </style>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="~/Content/Carousel.css">
         <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -180,10 +184,22 @@
                             @Html.AntiForgeryToken()
 
                         @*<form action="/action_page.php" target="_blank">*@
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+                            @*<input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
                             <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required="" name="Email">
                             <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required="" name="Subject">
-                            <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required="" name="Comment">
+                            <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required="" name="Comment">*@
+
+                            @Html.TextBoxFor(m => Model.Name, new { @class="w3-input w3-border", placeholder = "Name" })
+                            @Html.ValidationMessageFor(m => Model.Name, "", new { @style = "color:red" })
+
+                            @Html.TextBoxFor(m => Model.EmailAddress, new { @class = "w3-input w3-section w3-border", placeholder = "Email" })
+                            @Html.ValidationMessageFor(m => Model.EmailAddress, "", new { @style = "color:red" })
+
+                            @Html.TextBoxFor(m => Model.Subject, new { @class = "w3-input w3-section w3-border", placeholder = "Subject" })
+
+                            @Html.TextBoxFor(m => Model.Message, new { @class = "w3-input w3-section w3-border", placeholder = "Comment" })
+                            @Html.ValidationMessageFor(m => Model.Message, "", new { @style = "color:red" })
+                            <br>
                             <button class="w3-button w3-black w3-section" type="submit">
                                 <i class="fa fa-paper-plane"></i> SEND MESSAGE
                             </button>

@@ -29,7 +29,7 @@ namespace WGC.Controllers
                 return RedirectToAction("Success");
             }
             //its not valid reload the page and let data annotations show the error
-            return View(feedbackMessage);
+            return View("Index",feedbackMessage);
         }
     }
 }
