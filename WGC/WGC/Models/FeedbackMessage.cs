@@ -22,5 +22,7 @@ namespace WGC.Models
         [Required(ErrorMessage = "Please type a message before sending")]
         [Display(Name = "Message")]
         public string Message { get; set; }
+
+        public bool MessageSent { get; set; }
     }
 }
